@@ -16,17 +16,17 @@ const minute_el = document.getElementById("minute");
 const second_el = document.getElementById("second");
 
 function log_date() {
-	let new_year = new Date ("2024-01-01T00:00:00.000Z");
-	let today = new Date();
-	let milliseconds = new_year.getTime() - today.getTime();
+	let new_year = new Date ("Jan 1, 2024 00:00:00").getTime();
+	let today = new Date().getTime();
+	let milliseconds = new_year - today;
 	let seconds = Math.floor((milliseconds / 1000) % 60) + "";
 	let minutes = Math.floor( (milliseconds / 1000 / 60) % 60) + "";
 	let hours = Math.floor((milliseconds / 1000 / 60 / 60) % 24) + "";
 	let days =   Math.floor(milliseconds / 1000/ 60 / 60 / 24) + "";
-	day_el.innerHTML = days.padStart(2, "0");
-	hour_el.innerHTML = hours.padStart(2, "0");
-	minute_el.innerHTML = minutes.padStart(2, "0");
-	second_el.innerHTML = seconds.padStart(2, "0");
+	day_el.innerHTML = `${days.padStart(2, "0")}d`;
+	hour_el.innerHTML = `${hours.padStart(2, "0")}h`;
+	minute_el.innerHTML = `${minutes.padStart(2, "0")}m`;
+	second_el.innerHTML = `${seconds.padStart(2, "0")}s`;
 
 }
 const timer = setInterval(log_date, 1000);
