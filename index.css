@@ -1,0 +1,13 @@
+
+.counter_div{
+	display: flex;
+	gap: 2.5rem;
+	background-image: url("./images/new_year_bg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+}
+
+.timer_column h1{
+	color : white;
+}
