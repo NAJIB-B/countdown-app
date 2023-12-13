@@ -65,9 +65,7 @@ async function copy_quote() {
 let text = quote_textarea.innerHTML;
   try {
     await navigator.clipboard.writeText(text);
-
     copy_btn.innerHTML = "Copied!"
-    console.log('Content copied to clipboard');
   } catch (err) {
     console.error('Failed to copy: ', err);
   }
