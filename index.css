@@ -1,13 +1,241 @@
+body{
+	margin: 0px;
+}
 
-.counter_div{
-	display: flex;
-	gap: 2.5rem;
+.countdown_div{
+
 	background-image: url("./images/new_year_bg1.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	justify-content: center;
+	text-align: center;
+	color: white;
 }
 
-.timer_column h1{
-	color : white;
+.main_text{
+	font-family: Preahvihear, sans-serif;
+	font-weight: 700;
+	font-size: 2.5rem;
+	margin: 0px;
+	padding-top: 1rem;
+}
+
+.timer_div{
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+	padding: 3rem;
+	align-items: center;
+}
+
+.timer_div h1{
+	font-family: Nunito, sans-serif;
+	margin: 0px;
+	font-size: 4.5rem;
+	font-weight: 700;
+}
+
+.timer_div p{
+	font-family: Nunito, sans-serif;
+	font-size: 1.2rem;
+	margin: 0px;
+}
+
+.timer_column{
+display: flex;
+flex-direction: column;
+color: white;
+}
+
+#second{
+	color: rgb(236, 193, 52);
+}
+
+
+.message_div{
+	width: 100%;
+	margin-top: 2rem;
+}
+
+.quote_textarea{
+	width: 75%;
+	margin: auto;
+	border-radius: 4px;
+	border: 1px solid grey;
+	outline: none;
+	display: block;
+	padding: 2rem;
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	font-family: Preahvihear, sans-serif;
+	overflow-wrap: break-all;
+	text-wrap: wrap;
+	word-wrap: break-word;
+}
+
+.quote_btn_div{
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+
+}
+
+.quote_btn{
+	text-align: center;
+	border-radius: 12px;
+	border: 1px solid grey;
+	outline: none;
+	background-color: rgb(131, 32, 32);
+	padding: 1.5rem 2rem;
+	color: white;
+	font-family: Preahvihear, sans-serif;
+	font-size: 1.3rem;
+	
+}
+
+.copy_btn{
+	text-align: center;
+	border-radius: 12px;
+	border: 1px solid rgb(53, 185, 41);
+	outline: none;
+	background-color: rgb(53, 185, 41);
+	padding: 1.5rem 2rem;
+	color: white;
+	font-family: Preahvihear, sans-serif;
+	font-size: 1.3rem;
+	
+}
+::placeholder{
+	overflow-wrap: break-all;
+	text-wrap: wrap;
+	font-family: Preahvihear, sans-serif;
+	font-size:1rem;
+}
+
+/* WebKit, Edge */
+::-webkit-input-placeholder {
+	overflow-wrap: break-all;
+	font-family: Preahvihear, sans-serif;
+	font-size:1rem;
+      }
+      /* Firefox 4-18 */
+      :-moz-placeholder {
+	overflow-wrap: break-all;
+	font-family: Preahvihear, sans-serif;
+	font-size:1rem;
+	opacity: 1;
+      }
+      /* Firefox 19+ */
+      ::-moz-placeholder {
+	overflow-wrap: break-all;
+	font-family: Preahvihear, sans-serif;
+	font-size:0.8rem;
+	opacity: 1;
+      }
+      /* IE 10-11 */
+      :-ms-input-placeholder {
+	overflow-wrap: break-all;
+	font-family: Preahvihear, sans-serif;
+	font-size:1rem;
+      }
+      /* Edge */
+      ::-ms-input-placeholder {
+	overflow-wrap: break-all;
+	font-family: Preahvihear, sans-serif;
+	font-size:1rem;
+      }
+
+
+@media screen and (max-width: 850px){
+	.main_text{
+		font-size: 2rem;
+	}
+	
+	.timer_div{
+		gap: 2.5rem;
+	}
+	
+	.timer_div h1{
+		font-size: 3.5rem;
+	}
+	
+	.timer_div p{
+		font-size: 1rem;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.main_text{
+		font-size: 1.5rem;
+	}
+	
+	.timer_div{
+		gap: 2rem;
+	}
+	
+	.timer_div h1{
+		font-size: 3rem;
+	}
+	
+	.timer_div p{
+		font-size: 1rem;
+	}
+
+}
+
+
+@media screen and (max-width: 600px){
+	.main_text{
+		font-size: 1.2rem;
+	}
+	
+	.timer_div{
+		gap: 1.5rem;
+		padding: 2rem;
+	}
+	
+	.timer_div h1{
+		font-size: 2.5rem;
+	}
+	
+	.timer_div p{
+		font-size: 1rem;
+	}
+	::placeholder{
+		font-size:0.8rem;
+	}
+	.quote_btn_div{
+       flex-direction: column-reverse;
+       margin: auto 1rem;
+	
+	}
+	.quote_textarea{
+		padding: 1rem;
+
+	}
+	
+	
+
+}
+@media screen and (max-width: 500px){
+
+	.countdown_div{
+		background-position: center;
+	}
+	.main_text{
+		font-size: 1.2rem;
+	}
+	
+	.timer_div{
+		gap: 1rem;
+		padding: 2rem;
+	}
+	
+	.timer_div h1{
+		font-size: 1.5rem;
+	}
+	
+	.timer_div p{
+		font-size: 1rem;
+	}
+
 }

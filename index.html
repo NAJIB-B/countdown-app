@@ -1,28 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="./index.css">
-	<title>Document</title>
-</head>
-<body>
-	<div class="counter_div">
+	<title>Countdown</title>
 
-		<div class="timer_column">
-			<h1 id="day"></h1>
+	<!-- Google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;1,200;1,300&family=Preahvihear&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="countdown_div">
+		<h2 class="main_text">New Year Countdown</h2>
+
+		<div class="timer_div">
+			<div class="timer_column">
+				<h1 id="day"></h1>
+				<p>Days</p>
+			</div>
+			<div class="timer_column">
+				<h1 id="hour"></h1>
+				<p>Hours</p>
+			</div>
+			<div class="timer_column">
+				<h1 id="minute"></h1>
+				<p>Minutes</p>
+			</div>
+			<div class="timer_column">
+				<h1 id="second"></h1>
+				<p>Seconds</p>
+			</div>
 		</div>
-		<div class="timer_column">
-			<h1 id="hour"></h1>
-		</div>
-		<div class="timer_column"> 
-			<h1 id="minute"></h1>
-		</div>
-		<div class="timer_column">
-			<h1 id="second"></h1>
+
+
+	</div>
+
+	<div class="message_div">
+		<textarea  class="quote_textarea" id="quote_textarea" rows="10" placeholder="generate a new year's resolution quote..."></textarea>
+		<div class="quote_btn_div">
+			<button class="quote_btn" id="generate_btn">Generate quote</button>
+			<button class="copy_btn" id="copy_btn">Copy quote</button>
+			
 		</div>
 	</div>
 
 </body>
-<script type="text/javascript" src="./index.js"></script>
+<script type="module" src="./index.js"></script>
+
 </html>
